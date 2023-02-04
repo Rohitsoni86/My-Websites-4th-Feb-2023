@@ -20,20 +20,39 @@
     border-radius: 10px;
         }
         .main_table_formating{
-            height: 100px;
-            width: 100px;
+            height: 80px;
+            width: 80px;
         }
         h2{
-            color: cornflowerblue;
+            color: #ed1f1f;
         }
         #education_table{
             width: 100%;
             height: 50%;
             vertical-align: middle;
+            border-collapse: collapse !important;
+        }
+        .education_table_tr_th_td_formating{
+            border: 2px solid black !important; 
+            border-collapse: collapse !important;
+            padding: 10px !important;
         }
         .education_table_formating{
             height: 100px;
             width: 100px;
+        }
+
+        li{
+            margin: 8px 0px 0px 0px;
+        }
+        .Main_heading{
+            font-size: 40px;
+    color: black;
+    font-weight: bolder;
+        }
+        .Main_heading_2{
+    color: black;
+    font-weight: bolder;
         }
     </style>
 </head>
@@ -44,9 +63,9 @@
         <tr>
             <td><img src="./employee.png" alt="employee_image"></td>
             <td>
-                <h2>Rohit Soni</h2>
+                <h2 class="Main_heading">Rohit Soni</h2>
                 <hr>
-                <h3>Radixweb Trainee</h3>
+                <h3 class="Main_heading_2">Radixweb Trainee</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio facilis non vitae illum id vero, ea recusandae inventore a laboriosam. In neque repellat quam, iure autem porro fuga quaerat natus, dolorem, aperiam obcaecati repudiandae.</p>
             </td>
           </tr>
@@ -60,7 +79,7 @@
                     <li>dynamicsoni.rohit@gmail.com</li>
                     <li>7742736286</li>
                     <li>github.com/Rohitsoni86</li>
-                    <li>7742736286</li>
+                    <li>linkedin.com/in/engineer-rohit-soni-thetechguy</li>
                 </ul>
             
             </td>
@@ -82,43 +101,43 @@
             <td><h2>Personal Projects :</h2>
                 <hr>
                 <ul>
-                    <li>dynamicsoni.rohit@gmail.com</li>
-                    <li>7742736286</li>
-                    <li>github.com/Rohitsoni86</li>
-                    <li>7742736286</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, consequuntur!</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, consequuntur!</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, consequuntur!</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, consequuntur!</li>
                 </ul>
             </td>
             <td>
                 <h2>Education Qualification :</h2>
                 <hr>
                 <table id="education_table" >
-                    <tr class="education_table_formating" style=" border: 2px solid black !important; border-collapse: collapse !important;">
-                        <th>Qualification</th>
-                        <th>Institute/School</th>
-                        <th>Board</th>
-                        <th>Year of Passing</th>
-                        <th>Percentage</th>
+                    <tr class="education_table_formating education_table_tr_th_td_formating">
+                        <th class="education_table_tr_th_td_formating">Qualification</th>
+                        <th class="education_table_tr_th_td_formating">Institute/School</th>
+                        <th class="education_table_tr_th_td_formating">Board</th>
+                        <th class="education_table_tr_th_td_formating">Year of Passing</th>
+                        <th class="education_table_tr_th_td_formating">Percentage</th>
                       </tr>
                       <tr class="education_table_formating">
-                        <td>B.E.(C.S.E)</td>
-                        <td>Parul Institute of Eng & Technology</td>
-                        <td>Parul University</td>
-                        <td>2023</td>
-                        <td>87%</td>
+                        <td class="education_table_tr_th_td_formating">B.E.(C.S.E)</td>
+                        <td class="education_table_tr_th_td_formating">Parul Institute of Eng & Technology</td>
+                        <td class="education_table_tr_th_td_formating">Parul University</td>
+                        <td class="education_table_tr_th_td_formating">2023</td>
+                        <td class="education_table_tr_th_td_formating">87%</td>
                       </tr>
                       <tr class="education_table_formating">
-                        <td>HSC</td>
-                        <td>Pallavan School</td>
-                        <td>CBSE</td>
-                        <td>2018</td>
-                        <td>64%</td>
+                        <td class="education_table_tr_th_td_formating">HSC</td>
+                        <td class="education_table_tr_th_td_formating">Pallavan School</td>
+                        <td class="education_table_tr_th_td_formating">CBSE</td>
+                        <td class="education_table_tr_th_td_formating">2018</td>
+                        <td class="education_table_tr_th_td_formating">64%</td>
                       </tr>
                       <tr class="education_table_formating">
-                        <td>SSC</td>
-                        <td>Pallavan School</td>
-                        <td>CBSE</td>
-                        <td>2016</td>
-                        <td>96%</td>
+                        <td class="education_table_tr_th_td_formating">SSC</td>
+                        <td class="education_table_tr_th_td_formating">Pallavan School</td>
+                        <td class="education_table_tr_th_td_formating">CBSE</td>
+                        <td class="education_table_tr_th_td_formating">2016</td>
+                        <td class="education_table_tr_th_td_formating">96%</td>
                       </tr>
                 </table>
             </td>

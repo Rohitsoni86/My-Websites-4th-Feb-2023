@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="form_container">
+        <h2>Registration Form</h2>
+        <form action="" target="_blank">      
+            
+       
+        <label for="Emp_Name" class="label_text">Name :</label>
+        <input type="text" autofocus="autofocus" id="Emp_Name" name="Emp_Name" required  > <br>
+         <!-- Name --> 
+        
+        <label for="Emp_Age">Age :</label>
+        <input type="number" id="Emp_Age" name="Emp_Age" required pattern="[0-9]{2}"><br>
+        <!-- Age --> 
+
+
+        
+        <label for="Emp_gender">Gender :</label>
+        <input type="radio" name="Emp_gender" value="Male" id="Emp_gender"> <label for="Male" >Male</label>
+        <input type="radio" name="Emp_gender" value="Female" id="Emp_gender"> <label for="Female" >Female</label><br/>
+        <!-- Gender --> 
+        
+        <label for="Emp_Designation" class="label_text">Designation :</label>
+        <input type="text" id="Emp_Designation" name="Emp_Designation" required><br>
+         <!-- Designation -->
+
+         
+        <label for="Emp_Salary" class="label_text">Salary :</label>
+        <input type="text" id="Emp_Salary" name="Emp_Salary" required><br>
+        <!-- Salary --> 
+         
+        <label for="location">Location : </label>
+        <select name="Emp_location" id="Emp_location" required>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Daman_Diu">Daman and Diu</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="KL">Kerala</option>
+            <option value="MP">Madhya Pradesh</option>
+            <option value="MH">Maharashtra</option>
+            <option value="PB">Punjab</option>
+            <option value="RJ">Rajasthan</option>
+            <option value="Uttar_Pradesh">Uttar Pradesh</option>  
+        </select><br>
+        <!-- Location --> 
+
+        <label for="Emp_Email">Email : </label>
+        <input type="email" name="Emp_Email" id="Emp_Email_id" required><br>
+        <!-- Email --> 
+
+
+        <label for="Emp_Date_j"> Date of Joining : </label>
+        <input type="date" name="Date_j" id="Date_joining" required><br>
+        <!-- Date_joining --> 
+
+        <label for="Emp_Contact"> Contact : </label>
+        <input type="text" name="Contact" id="Contact" required  pattern="[0-9]{5}-[0-9]{5}" placeholder="XXXXX-XXXXX"><br>
+        <p>Excluding +91</p>
+        <!-- Contact --> 
+
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+        
+    </form>
+      </div>
+</body>
+</html>

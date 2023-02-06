@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Registration</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <style>
     table{
         border: 2px solid black
@@ -48,9 +49,8 @@
       <div class="form_container">
         <h2>Registration Form</h2>
         <center> 
+          <form action="#" target="_blank">  
         <table> 
-        <form action="" target="_blank">      
-
             <tr>
                 <td class="td_end"><label for="Emp_Name" class="label_text">Name :</label></td>
                 <td class="td_start"><input type="text" autofocus="autofocus" id="Emp_Name" name="Emp_Name" required   class="input_text_style"></td>
@@ -61,7 +61,8 @@
             </tr>
             <tr>
                 <td class="td_end"><label for="Emp_gender">Gender :</label></td>
-                <td class="td_start"> <input type="radio" name="Emp_gender" value="Male" id="Emp_gender"> <label for="Male" >Male</label>
+                <td class="td_start"> 
+                  <input type="radio" name="Emp_gender" value="Male" id="Emp_gender"> <label for="Male" >Male</label>
                     <input type="radio" name="Emp_gender" value="Female" id="Emp_gender"> <label for="Female" >Female</label><br/></td>
               </tr>
               <tr>
@@ -104,13 +105,19 @@
                 <td class="td_start"><input type="text" name="Contact" id="Contact" required  pattern="[0-9]{5}-[0-9]{5}" placeholder="XXXXX-XXXXX" class="input_text_style"><br> <p>Excluding +91</p></td>
               </tr>
               <tr>
-                <td class="td_end"><input type="submit" value="Submit"></td>
+                <td class="td_end"><input type="submit" value="Submit" id="save_btn"  onclick="submitData(event)"></td>
                 <td class="td_start"><input type="reset" value="Reset"></td>
               </tr>
-        
+         
     </form>
 </table>
 </center>
+      </div>
+      <div>
+       <h4> Your data comes here :  </h4> 
+        <h5>Retrive data <input type="button" value="Retrive" onclick="RetriveData(event)"> </h5>
+        <p id="userData">Data</p>
+        
       </div>
 </body>
 </html>
